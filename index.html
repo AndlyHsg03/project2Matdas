@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hitung Kecepatan dengan Turunan</title>
+    <link rel="stylesheet" href="style.css">
+    <!-- Tambahkan MathJax -->
+    <script src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>Hitung Kecepatan dengan Turunan</h1>
+        <p>
+            Dalam fisika, kecepatan adalah turunan pertama dari fungsi posisi \(s(t)\) terhadap waktu \(t\):  
+            \[
+            v(t) = \frac{ds}{dt}
+            \]
+            Masukkan jarak (\(s\)) dan waktu (\(t\)) untuk menghitung kecepatan!
+        </p>
+        <form id="speedForm">
+            <label for="distance">Jarak (meter):</label>
+            <input type="number" id="distance" placeholder="Masukkan jarak" required>
+            
+            <label for="time">Waktu (detik):</label>
+            <input type="number" id="time" placeholder="Masukkan waktu" required>
+            
+            <button type="button" onclick="calculateSpeed()">Hitung Kecepatan</button>
+        </form>
+        <div id="result"></div>
+        <div id="explanation"></div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
